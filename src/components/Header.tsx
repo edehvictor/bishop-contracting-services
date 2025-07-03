@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
     <main className="">
       <nav
         className={`fixed top-12 rounded-full md:left-11 md:right-11 sm:left-3 sm:right-3 left-6 right-6 z-50 transition-all duration-300 backdrop-blur-md shadow-lg 
-        bg-white py-4 max-w-7xl mx-auto
+        bg-white py-2 max-w-7xl mx-auto
        ${className}`}
       >
         <div>
