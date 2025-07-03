@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const EnvironmentHero = () => {
   return (
-    <section className="relative bg-[url('/images/net.png')] mb-10 bg-center bg-cover object-contain bg-blend-multiply w-full border-b border-green-200 ">
+    <section className="relative bg-[url('/images/net.png')] mb-10 bg-center bg-cover object-contain bg-blend-multiply w-full ">
       <div className="relative z-10 py-36 pb-10 max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full">
         <Navbar />
         <div className="mt-10 w-full flex flex-col items-center justify-center">
@@ -12,7 +12,7 @@ const EnvironmentHero = () => {
               <span className="w-3 h-3 bg-green-400 text-center align-middle rounded-full animate-pulse"></span>
               Environmental remediation
             </p>
-            <h1 className="text-3xl sm:text-5xl  font-bold text-gray-800 md:leading-tight mb-6">
+            <h1 className="text-2xl sm:text-5xl  font-bold text-gray-800 md:leading-tight mb-6">
               Safe. Certified. Complete
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">

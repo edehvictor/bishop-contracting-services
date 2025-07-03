@@ -1,9 +1,9 @@
 const Solution = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 ">
-      <div className=" flex flex-col md:flex-row text-center gap-x-7 gap-y-4 py-6 w-full  rounded-2xl bg-[#00AC41] px-4">
-        <div className=" w-full flex flex-col space-y-20">
-          <h3 className="text-4xl text-start w-full text-white font-bold mb-4 mt-10">
+      <div className=" flex flex-col md:flex-row text-center gap-x-7  py-6 w-full  rounded-2xl bg-[#00AC41] px-4">
+        <div className=" w-full flex flex-col ">
+          <h3 className="text-4xl md:text-start text-center w-full text-white font-bold mb-4 mt-10">
             Need our Solution?
           </h3>
           <p className="text-white text-start mb-6 max-w-2xl mx-auto">

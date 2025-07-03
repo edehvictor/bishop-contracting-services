@@ -15,16 +15,16 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
   return (
     <main className="">
       <nav
-        className={`fixed top-12 rounded-full md:left-11 md:right-11 sm:left-3 sm:right-3 left-6 right-6 z-50 transition-all duration-300 backdrop-blur-md shadow-lg 
+        className={`fixed top-12 rounded-full md:left-11 md:right-11 sm:left-2 sm:right-2 left-4 right-4 z-50 transition-all duration-300 backdrop-blur-md shadow-lg 
         bg-white py-2 max-w-7xl mx-auto
        ${className}`}
       >
         <div>
           <div className="m px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
+              <a href="/" className="flex items-center space-x-3">
                 <img src="/images/logo.png" alt="logo " className="w-14" />
-              </div>
+              </a>
 
               <div className="hidden lg:flex items-center space-x-8">
                 {navItems.map((item) => (

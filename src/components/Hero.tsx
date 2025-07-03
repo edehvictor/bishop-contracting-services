@@ -13,7 +13,7 @@ const Hero = () => {
                 <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
                 Environmental stewards
               </p>
-              <h1 className="text-3xl sm:text-5xl  font-bold text-gray-800 leading-tight mb-6">
+              <h1 className="text-2xl sm:text-5xl  font-bold text-gray-800 leading-tight mb-6">
                 Environmental{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                   Leaders
@@ -30,14 +30,14 @@ const Hero = () => {
                 core.
               </p>
             </div>
-            <div className="flex flex-row md:justify-start  justify-center gap-x-6">
+            <div className="flex md:flex-row flex-col items-center justify-center gap-6">
               <Button
                 asChild
                 className="w-fit bg-[#00AC41]  px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
               >
                 <a href="#quote">Get Free Assessment</a>
               </Button>
-              <div className="w-fit bg-[#00AC 41]  px-7 py-1 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
+              <div className="w-[180px] text-center  px-7 py-1 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
                 <a href="#quote">Contact us</a>
               </div>
             </div>
