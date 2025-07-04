@@ -37,7 +37,7 @@ const ContactSection = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-gradient-to-br  from-green-500 to-green-600  text-white py-3 rounded-md font-semibold"
+              className="w-full bg-gradient-to-br  from-green-500 to-green-600  text-white py-3 rounded-md font-semibold cursor-pointer"
             >
               Submit
             </button>
@@ -53,7 +53,7 @@ const ContactSection = () => {
               {
                 icon: <Phone className="w-5 h-5" />,
                 title: "Make inquiry about your project",
-                action: "Smart inquiries",
+                action: "Quick inquiries",
               },
               {
                 icon: <FormInput className="w-5 h-5" />,

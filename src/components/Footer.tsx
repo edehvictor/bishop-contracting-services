@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg f text-gray-800">
               Quick Links
             </h3>
-            <div className="flex flex-col text-gray-500  space-y-2 ">
+            <div className="flex flex-col text-gray-600 font-medium text-sm space-y-2 ">
               <FooterLink href="/#">About us</FooterLink>
               <FooterLink href="/#services">Services</FooterLink>
               <FooterLink href="/#">Contact</FooterLink>
@@ -44,7 +44,7 @@ const Footer = () => {
           {/* More Links */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg f text-zinc-700">More</h3>
-            <div className="flex flex-col space-y-2 text-gray-600 font-medium ">
+            <div className="flex flex-col space-y-2 text-gray-600 text-sm font-medium ">
               <FooterLink href="/#">Resources</FooterLink>
               <FooterLink href="/#">Certifications</FooterLink>
               <FooterLink href="/#">Testimonials</FooterLink>
@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="f text-gray-800  font-semibold ">
               Legal & Policy Links
             </h3>
-            <div className="flex flex-col space-y-2 text-gray-600 font-medium  ">
+            <div className="flex flex-col space-y-2 text-gray-600 font-medium text-sm ">
               <FooterLink href="/#">Privacy Policy</FooterLink>
               <FooterLink href="/#">Cookie Policy</FooterLink>
               <FooterLink href="/#">Terms and condition</FooterLink>

@@ -48,7 +48,7 @@ const Hero = () => {
             <img
               src="/images/service.jpg"
               alt="Service"
-              className="relative z-10 w-full  md:w-[550px] grayscale h-[17rem] md:h-[27rem] object-cover transform rotate-[2deg] rounded-2xl shadow-xl"
+              className="relative z-10 w-full  md:w-[550px]  h-[17rem] md:h-[27rem] object-cover transform rotate-[2deg] rounded-2xl "
             />
           </div>
         </div>

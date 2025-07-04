@@ -35,7 +35,7 @@ export default function ProcessSteps() {
           Process flow
         </p>
         <h1 className="text-xl md:text-3xl my-3 font-bold text-gray-900 text-center">
-          We have changed the game —hear it from our customers
+          How our selective demolition service works
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8 text-center leading-relaxed">
           Our simple four-step process gets you the help you need quickly and

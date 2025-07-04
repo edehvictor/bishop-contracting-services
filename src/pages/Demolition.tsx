@@ -1,3 +1,4 @@
+import ContactSection from "@/components/Contact";
 import Footer from "@/components/Footer";
 import DemolitionBody from "@/components/services/demolition/DemolitionBody";
 import DemolitionHero from "@/components/services/demolition/DemolitionHero";
@@ -11,6 +12,7 @@ const Demolition = () => {
       <DemolitionBody />
       <ProcessChain />
       <Testimonials />
+      <ContactSection />
       <Footer />
     </div>
   );

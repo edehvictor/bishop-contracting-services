@@ -1,3 +1,4 @@
+import ContactSection from "@/components/Contact";
 import Footer from "@/components/Footer";
 import EnvironmentCard from "@/components/services/environmental remediation/EnvironmentCard";
 import EnvironmentHero from "@/components/services/environmental remediation/EnvironmentHero";
@@ -9,6 +10,7 @@ const Environment = () => {
       <EnvironmentHero />
       <EnvironmentCard />
       <Testimonials />
+      <ContactSection />
       <Footer />
     </div>
   );
