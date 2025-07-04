@@ -1,18 +1,18 @@
 import Hero from "@/components/Hero";
-import Solution from "@/components/Solution";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
-import OverviewTab from "@/components/OverviewTab";
 import Testimonials from "@/components/Testimonials";
+import Services from "@/components/Services";
+import ContactSection from "@/components/Contact";
 
 const LandingPage = () => {
   return (
     <div className=" w-full">
       <Hero />
-      <OverviewTab />
+      <Services />
       <About />
       <Testimonials />
-      <Solution />
+      <ContactSection />
       <Footer />
     </div>
   );

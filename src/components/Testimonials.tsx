@@ -106,12 +106,12 @@ const Testimonials: React.FC = () => {
     <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full mb-10 mt-10 ">
       <p className="flex text-center gap-3 w-fit  justify-center items-center mx-auto px-3 py-1 border border-green-300 rounded-2xl bg-white text-zinc-500 text-sm md:text-base">
         <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse "></span>
-        Customers
+        Customer reviews
       </p>
       <h1 className="text-xl md:text-3xl my-3 font-bold text-gray-900 text-center">
         We have changed the game —hear it from our customers
       </h1>
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8 text-center leading-relaxed">
+      <p className="text-[16px] text-gray-600 max-w-3xl mx-auto mb-8 text-center leading-relaxed">
         Environmental remediation, demolition, and transportation services real
         stories <br /> from people who we served.
       </p>

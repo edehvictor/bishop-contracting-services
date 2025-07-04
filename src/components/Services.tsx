@@ -1,6 +1,6 @@
-import { Hammer, Leaf, Recycle, Truck } from "lucide-react";
+import { Leaf, Recycle, Shredder, Truck } from "lucide-react";
 
-const OverviewTab = () => {
+const Services = () => {
   return (
     <section className={`bg-[#1B1E20] text-white`} id="services">
       <div className={`m max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7`}>
@@ -27,7 +27,7 @@ const OverviewTab = () => {
         <h5 className={`font-medium text-[24px] md:text-3xl  capitalize`}>
           Complete Environmental Solutions
         </h5>
-        <p className={`font-normal text-lg max-w-[560px] w-full`}>
+        <p className={`font-normal text-[16px] max-w-[560px] w-full`}>
           From environmental remediation to safe demolition and specialized
           transport, we provide comprehensive services that protect communities
           and deliver results.
@@ -42,11 +42,11 @@ const OverviewTab = () => {
               >
                 <Leaf className="h-10 w-10  text-white" />
               </div>
-              <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-medium text-lg  md:text-2xl`}>
+              <div className={`flex flex-col `}>
+                <h5 className={`text-lg font-bold md:text-2xl`}>
                   Environmental Remediation
                 </h5>
-                <p className={`font-normal text-sm  md:text-lg`}>
+                <p className={`font-normal text-sm  md:text-[16px]`}>
                   Complete Environmental Solutions
                 </p>
               </div>
@@ -56,13 +56,13 @@ const OverviewTab = () => {
               <div
                 className={`w-16 h-16 bg-gradient-to-br  from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
-                <Hammer className="h-10 w-10  text-white" />
+                <Shredder className="h-10 w-10  text-white" />
               </div>
               <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-medium text-lg  md:text-2xl`}>
+                <h5 className={`font-bold text-lg  md:text-2xl`}>
                   Selective Demolition
                 </h5>
-                <p className={`font-normal text-sm  md:text-lg`}>
+                <p className={`font-normal text-sm  md:text-[16px]`}>
                   Safe & Efficient Demolition
                 </p>
               </div>
@@ -80,10 +80,10 @@ const OverviewTab = () => {
                 <Truck className="h-10 w-10  text-white" />
               </div>
               <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-medium text-lg  md:text-2xl`}>
+                <h5 className={`font-bold text-lg  md:text-2xl`}>
                   Transportation Services
                 </h5>
-                <p className={`font-normal text-sm  md:text-lg`}>
+                <p className={`font-normal text-sm  md:text-[16px]`}>
                   Specialized Material Transport
                 </p>
               </div>
@@ -96,10 +96,10 @@ const OverviewTab = () => {
                 <Recycle className="h-10 w-10  text-white" />
               </div>
               <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-medium text-lg  md:text-2xl`}>
+                <h5 className={`font-bold text-lg  md:text-2xl`}>
                   Debris Removal & Recycling
                 </h5>
-                <p className={`font-normal text-sm  md:text-lg`}>
+                <p className={`font-normal text-sm  md:text-[16px]`}>
                   Professional demolition services for all structures
                 </p>
               </div>
@@ -111,4 +111,4 @@ const OverviewTab = () => {
   );
 };
 
-export default OverviewTab;
+export default Services;

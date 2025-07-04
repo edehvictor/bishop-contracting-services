@@ -27,7 +27,7 @@ const About: React.FC = () => {
 
     return (
       <div
-        className={`group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-300 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden ${heightClass}`}
+        className={`group relative rounded-2xl border border-gray-200 hover:border-gray-300  hover:shadow-xl transition-all duration-500 hover:scale-[1] overflow-hidden ${heightClass}`}
         style={{
           animationDelay: `${index * 100}ms`,
           animation: "fadeInUp 0.6s ease-out forwards",
@@ -40,7 +40,7 @@ const About: React.FC = () => {
         <div className="relative p-6  h-full flex flex-col">
           <div className="flex items-start space-x-4 mb-6">
             <div
-              className={`w-16 h-16 bg-gradient-to-br ${about.iconBg} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}
+              className={`w-16 h-16  rounded-xl flex items-center justify-center group-hover:scale-95 transition-transform duration-300 shadow-sm flex-shrink-0 bg-gradient-to-br ${about.iconBg}`}
             >
               <IconComponent className="h-8 w-8 text-white" />
             </div>
@@ -59,13 +59,13 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+        <div className="absolute inset-0 -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
       </div>
     );
   };
 
   return (
-    <section className="py-10 bg-[#f7f5f4] relative overflow-hidden" id="About">
+    <section className="py-10 bg-white relative overflow-hidden" id="About">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative">
         <div className="text-center mb-16">
           <div className="inline-block text-zinc-500 px-6 py-3  mb-6 ">
@@ -74,14 +74,14 @@ const About: React.FC = () => {
               Industry Leader
             </p>
           </div>
-          <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-3">
             All Your Environmental
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
               {" "}
               Solutions in One Place
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-[16px] text-gray-600 max-w-3xl mx-auto mb-8">
             When environmental challenges demand expertise, reliability, and
             results, industry leaders trust Bishop. Here's why we're the
             preferred choice for critical projects.
