@@ -2,7 +2,7 @@ import { Leaf, Recycle, Shredder, Truck } from "lucide-react";
 
 const Services = () => {
   return (
-    <section className={`bg-[#1B1E20] text-white`} id="services">
+    <section className={`bg-[#000] text-white`} id="services">
       <div className={` max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7`}>
         <div className={`max-w-[460px] w-full`}>
           <h3
@@ -16,6 +16,7 @@ const Services = () => {
             />
             Services
           </h3>
+
           <img
             src={`/images/underStrokeWhite.svg`}
             alt="underline stroke"
@@ -23,22 +24,22 @@ const Services = () => {
             height={30}
             className={`w-full`}
           />
+          <p
+            className={`font-normal text-[16px] max-w-[560px] w-full text-gray-400 mb-10 `}
+          >
+            From environmental remediation to safe demolition and specialized
+            transport, we provide comprehensive services that protect
+            communities and deliver results.
+          </p>
         </div>
-        <h5 className={`font-medium text-[24px] md:text-3xl  capitalize`}>
-          Complete Environmental Solutions
-        </h5>
-        <p className={`font-normal text-[16px] max-w-[560px] w-full`}>
-          From environmental remediation to safe demolition and specialized
-          transport, we provide comprehensive services that protect communities
-          and deliver results.
-        </p>
+
         <div
           className={` flex py-5 lg:py-0 lg:h-[400px] w-full flex-col gap-15 lg:gap-0 lg:flex-row`}
         >
           <div className={`w-full flex flex-col gap-15`}>
             <div className={`flex gap-2`}>
               <div
-                className={`w-16 h-16 bg-gradient-to-br  from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                className={`w-16 h-16 bg-gradient-to-br  rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
                 <Leaf className="h-10 w-10  text-white" />
               </div>
@@ -46,15 +47,18 @@ const Services = () => {
                 <h5 className={`text-lg font-bold md:text-2xl`}>
                   Environmental Remediation
                 </h5>
-                <p className={`font-normal text-sm  md:text-[16px]`}>
-                  Complete Environmental Solutions
+                <p
+                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
+                >
+                  Safe cleanup of hazardous materials protecting people and
+                  propertyComplete Environmental Solutions
                 </p>
               </div>
             </div>
-            <hr className={`text-white`} />
+            <hr className={`text-white `} />
             <div className={`flex gap-2`}>
               <div
-                className={`w-16 h-16 bg-gradient-to-br  from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
                 <Shredder className="h-10 w-10  text-white" />
               </div>
@@ -62,36 +66,43 @@ const Services = () => {
                 <h5 className={`font-bold text-lg  md:text-2xl`}>
                   Selective Demolition
                 </h5>
-                <p className={`font-normal text-sm  md:text-[16px]`}>
-                  Safe & Efficient Demolition
+                <p
+                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
+                >
+                  Precision demolition services for occupied and sensitive
+                  structures
                 </p>
               </div>
             </div>
           </div>
-          <hr className={`lg:hidden text-white`} />
+          <hr className={`lg:hidden bg-white/10 text-white/10`} />
           <div
-            className={`w-1 h-full hidden lg:flex bg-white text-white `}
+            className={`w-1 h-full hidden lg:flex bg-white/10 text-white/10 `}
           ></div>
           <div className={`w-full self-center flex flex-col gap-15`}>
             <div className={`flex lg:ps-5 gap-2`}>
               <div
-                className={`w-16 h-16 bg-gradient-to-br  from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
                 <Truck className="h-10 w-10  text-white" />
               </div>
+
               <div className={`flex flex-col gap-2`}>
                 <h5 className={`font-bold text-lg  md:text-2xl`}>
                   Transportation Services
                 </h5>
-                <p className={`font-normal text-sm  md:text-[16px]`}>
-                  Specialized Material Transport
+                <p
+                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
+                >
+                  Specialized hauling and emergency response for hazardous
+                  materials
                 </p>
               </div>
             </div>
-            <hr className={`text-white`} />
+            <hr className={`text-white/10 bg-white/10`} />
             <div className={`flex lg:ps-5 gap-2`}>
               <div
-                className={`w-16 h-16 bg-gradient-to-br  from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
                 <Recycle className="h-10 w-10  text-white" />
               </div>
@@ -99,7 +110,9 @@ const Services = () => {
                 <h5 className={`font-bold text-lg  md:text-2xl`}>
                   Debris Removal & Recycling
                 </h5>
-                <p className={`font-normal text-sm  md:text-[16px]`}>
+                <p
+                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
+                >
                   Professional demolition services for all structures
                 </p>
               </div>
