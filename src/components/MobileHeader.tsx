@@ -53,7 +53,7 @@ const MobileHeader = ({
                 ) : (
                   <a
                     href={item.href}
-                    className="block text-gray-700 hover:text-green-600 font-medium py-3 px-3 rounded-lg hover:bg-green-50 transition-all duration-200"
+                    className="block text-gray-700 text-sm hover:text-green-600 font-medium py-3 px-3 rounded-lg hover:bg-green-50 transition-all duration-200"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}

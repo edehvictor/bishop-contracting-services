@@ -3,9 +3,9 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/images/bg.svg')] h-screen bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 border-b-1 border-green-200">
+    <section className="bg-[url('/images/bg.svg')] h-scr een bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 border-b-1 border-green-200">
       <Navbar />
-      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10">
         <div className="flex md:flex-row flex-col w-full  h-full pt-36 pb-1 justify-start items-start gap-x-10 ">
           <div className="mt-10 w-full">
             <div className="mb-6 md:text-start text-center w-full">
@@ -40,13 +40,15 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="w-full  relative flex mt-10 justify-center md:justify-end">
-            <div className="absolute w-[550px]  h-[16rem] md:h-[27rem] transform rotate-[-2deg] bg-green-100 rounded-3xl z-0"></div>
+          <div className="w-full flex justify-center md:justify-end mt-10 relative mb-10">
+            <div className="absolute inset-0 flex justify-center md:justify-end">
+              <div className="w-full md:w-[550px] h-[17rem] md:h-[27rem] transform rotate-[-2deg] bg-green-100 rounded-3xl z-0"></div>
+            </div>
 
             <img
               src="/images/service.jpg"
               alt="Service"
-              className="w-[550px] z-10 h-[16rem] md:h-[27rem] grayscale object-cover  transform rotate-[2deg] rounded-2xl shadow-xl"
+              className="relative z-10 w-full  md:w-[550px] grayscale h-[17rem] md:h-[27rem] object-cover transform rotate-[2deg] rounded-2xl shadow-xl"
             />
           </div>
         </div>

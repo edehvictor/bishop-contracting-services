@@ -20,19 +20,19 @@ const DemolitionHero = () => {
               </span>{" "}
             </h1>
 
-            <p className="md:text-lg text-[16px] text-gray-600 mb-8 max-w-2xl w-full mx-auto lg:mx-0">
+            <p className="md:text-[16px] text-sm text-gray-600 mb-8 max-w-2xl w-full mx-auto lg:mx-0">
               Interior, Structural, and Occupied Building Demolition — Safely
               Executed. Minimally Invasive. Maximum Control
             </p>
           </div>
-          <div className="flex md:flex-row flex-col items-center justify-center gap-6">
+          <div className="flex md:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
             <Button
               asChild
-              className="w-fit bg-[#00AC41]  px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
+              className="w-fit bg-[#00AC41]  px-6 py-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
             >
               <a href="#quote">Get Free Assessment</a>
             </Button>
-            <div className="w-[180px] text-center  px-7 py-1 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
+            <div className="w-[180px] text-center  px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
               <a href="#quote">Contact us</a>
             </div>
           </div>

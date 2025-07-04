@@ -21,7 +21,9 @@ const DemolitionBody = () => {
         <h5 className={`font-medium text-[24px] md:text-3xl  capitalize`}>
           What is Selective Demolition?
         </h5>
-        <p className={`font-normal text-sm md:text-lg max-w-[560px] w-full`}>
+        <p
+          className={`font-normal text-sm md:text-[16px] max-w-[560px] w-full`}
+        >
           Selective demolition is the careful and controlled removal of specific
           interior or structural components of a building, while protecting the
           integrity of remaining areas. This process is especially valuable in
@@ -43,12 +45,12 @@ const DemolitionBody = () => {
                   Interior Demolition
                 </h5>
                 <p className={`font-normal text-sm  md:text-lg`}>
-                  <span className=" flex flex-row gap-1 items-center">
+                  <span className=" flex flex-row gap-1 items-center text-sm">
                     {" "}
                     <CheckCircle /> Removal of walls, ceilings, floors, fixtures
                     and finishes
                   </span>
-                  <span className=" flex flex-row gap-1 items-center">
+                  <span className=" flex flex-row gap-1 items-center text-sm">
                     <CheckCircle /> Dust and noise control in active
                     environments
                   </span>
@@ -67,11 +69,11 @@ const DemolitionBody = () => {
                   Structural Demolition
                 </h5>
                 <p className={`font-normal text-sm  md:text-lg`}>
-                  <span className=" flex flex-row gap-1 ">
+                  <span className=" flex flex-row gap-1 text-sm ">
                     <CheckCircle /> Demolition of beams, columns, slabs, and
                     structural walls
                   </span>
-                  <span className=" flex flex-row gap-1 items-center">
+                  <span className=" flex flex-row gap-1 items-center text-sm">
                     {" "}
                     <CheckCircle />
                     Engineered dismantling to preserve building stability
@@ -96,11 +98,11 @@ const DemolitionBody = () => {
                   Occupied Buildings
                 </h5>
                 <p className={`font-normal text-sm  md:text-lg`}>
-                  <span className=" flex flex-row gap-1 items-center">
+                  <span className=" flex flex-row gap-1 items-center  text-sm">
                     <CheckCircle /> Zero-disruption strategies for schools, and
                     businesses
                   </span>
-                  <span className=" flex flex-row gap-1 items-center">
+                  <span className=" flex flex-row gap-1 items-center text-sm">
                     {" "}
                     <CheckCircle />
                     Night and weekend scheduling available

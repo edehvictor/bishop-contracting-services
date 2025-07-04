@@ -16,7 +16,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ href, children }) => (
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f7f5f4] py-16 px-4">
+    <footer className="bg-[#f7f5f4] py-16 px-4 border-t-2">
       <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8   ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1">

@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
                       href={item.href}
                       className="text-white/90 hover:text-green-400 font-sm transition-all duration-200 flex items-center space-x-1 py-2 hover:scale-105 relative group/nav"
                     >
-                      <span className="text-gray-600 font-medium inline-flex items-center justify-center gap-x-1 align-middle">
+                      <span className="text-gray-600 text-sm font-medium inline-flex items-center justify-center gap-x-1 align-middle">
                         {item.name}{" "}
                         {item.name === "Services" && (
                           <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
                     </a>
 
                     {item.hasDropdown && (
-                      <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                      <div className="absolute  text-sm top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
                         <div className="py-2">
                           <a
                             href="environment"

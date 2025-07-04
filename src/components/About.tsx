@@ -34,7 +34,7 @@ const About: React.FC = () => {
         }}
       >
         <div
-          className={`absolute inset-0 bg-gradient-to-br ${about.cardBg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+          className={`absolute inset-0 bg-gradie nt-to-br ${about.cardBg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
         ></div>
 
         <div className="relative p-6  h-full flex flex-col">

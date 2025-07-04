@@ -3,7 +3,7 @@ import { Leaf, Recycle, Shredder, Truck } from "lucide-react";
 const Services = () => {
   return (
     <section className={`bg-[#1B1E20] text-white`} id="services">
-      <div className={`m max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7`}>
+      <div className={` max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7`}>
         <div className={`max-w-[460px] w-full`}>
           <h3
             className={`uppercase  flex items-center gap-3 font-bold text-3xl`}
