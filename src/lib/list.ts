@@ -1,10 +1,15 @@
-import type { IAbout } from "@/components/About";
+import type { CertificationItem } from "@/components/company/Certifications";
+import type { StatItem } from "@/components/company/Impact";
+import type { IFeature } from "@/components/Features";
 import {
   Award,
   CheckCircle,
+  Clock,
   HardHat,
   Heart,
   Leaf,
+  MapPin,
+  Phone,
   Shield,
   Star,
   Truck,
@@ -12,7 +17,7 @@ import {
 
 export const navItems = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/#" },
+  { name: "About", href: "/about" },
   { name: "Services", href: "#", hasDropdown: true },
   { name: "Contact", href: "#contact" },
 ];
@@ -32,13 +37,13 @@ export const serviceItems = [
   },
   {
     name: "Transportation",
-    href: "#transport",
+    href: "/transportation",
     icon: Truck,
     color: "text-blue-500",
   },
 ];
 
-export const AboutList: IAbout[] = [
+export const FeatureList: IFeature[] = [
   {
     id: "trust",
     title: "Trust & Reliability",
@@ -144,5 +149,56 @@ export const AboutList: IAbout[] = [
       "Client satisfaction",
     ],
     height: "short",
+  },
+];
+
+export const certifications: CertificationItem[] = [
+  {
+    name: "Environmental Protection Agency",
+    shortName: "EPA",
+    category: "environmental",
+  },
+  {
+    name: "Occupational Safety and Health Administration",
+    shortName: "OSHA",
+    category: "safety",
+  },
+  {
+    name: "National Institute for Occupational Safety and Health",
+    shortName: "NIOSH",
+    category: "safety",
+  },
+  {
+    name: "Department of Transportation",
+    shortName: "DOT",
+    category: "transportation",
+  },
+  {
+    name: "Minority Business Enterprise",
+    shortName: "MBE",
+    category: "business",
+  },
+];
+
+export const stats: StatItem[] = [
+  {
+    number: "500+",
+    label: "Projects Completed",
+    icon: CheckCircle,
+  },
+  {
+    number: "15+",
+    label: "Years Experience",
+    icon: Clock,
+  },
+  {
+    number: "2",
+    label: "States Served",
+    icon: MapPin,
+  },
+  {
+    number: "24/7",
+    label: "Emergency Response",
+    icon: Phone,
   },
 ];

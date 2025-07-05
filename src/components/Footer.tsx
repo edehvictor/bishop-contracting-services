@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="flex flex-col text-gray-600 font-medium text-sm space-y-2 ">
               <FooterLink href="/#">About us</FooterLink>
               <FooterLink href="/#services">Services</FooterLink>
-              <FooterLink href="/#">Contact</FooterLink>
+              <FooterLink href="/about">Company</FooterLink>
             </div>
           </div>
 

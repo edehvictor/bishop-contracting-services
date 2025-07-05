@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import Environment from "./pages/Environment";
 import Demolition from "./pages/Demolition";
+import Company from "./pages/Company";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,14 @@ const router = createBrowserRouter([
     path: "/demolition",
     element: <Demolition />,
   },
+  {
+    path: "/about",
+    element: <Company />,
+  },
+  // {
+  //   path: "/transportation",
+  //   element: <Transportation />,
+  // },
 ]);
 
 function App() {

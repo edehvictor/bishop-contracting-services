@@ -1,36 +1,40 @@
-import { Leaf, Recycle, Shredder, Truck } from "lucide-react";
+import { Leaf, Recycle, Tractor, Truck } from "lucide-react";
 
 const Services = () => {
   return (
     <section className={`bg-[#000] text-white`} id="services">
       <div className={` max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7`}>
-        <div className={`max-w-[460px] w-full`}>
-          <h3
-            className={`uppercase  flex items-center gap-3 font-bold text-3xl`}
-          >
-            <img
-              height={25}
-              width={29}
-              src={`/images/pointerWhite.webp`}
-              alt="pointer"
-            />
-            Services
-          </h3>
+        <div className={` w-full flex flex-col md:flex-row justify-between`}>
+          <div className="w-full ">
+            <h3
+              className={`uppercase  flex items-center gap-3 font-bold text-3xl`}
+            >
+              <img
+                height={25}
+                width={29}
+                src={`/images/pointerWhite.webp`}
+                alt="pointer"
+              />
+              Services
+            </h3>
 
-          <img
-            src={`/images/underStrokeWhite.svg`}
-            alt="underline stroke"
-            width={730}
-            height={30}
-            className={`w-full`}
-          />
-          <p
-            className={`font-normal text-[16px] max-w-[560px] w-full text-gray-400 mb-10 `}
-          >
-            From environmental remediation to safe demolition and specialized
-            transport, we provide comprehensive services that protect
-            communities and deliver results.
-          </p>
+            <img
+              src={`/images/underStrokeWhite.svg`}
+              alt="underline stroke"
+              width={20}
+              height={30}
+              className={`w-full max-w-[460px]`}
+            />
+          </div>
+          <div className="w-full">
+            <p
+              className={`font-normal text-[16px] max-w-[560px] w-full text-gray-400 mb-8 mt-5 md:text-right`}
+            >
+              From environmental remediation to safe demolition and specialized
+              transport, we provide comprehensive services that protect
+              communities and deliver results.
+            </p>
+          </div>
         </div>
 
         <div
@@ -44,14 +48,14 @@ const Services = () => {
                 <Leaf className="h-10 w-10  text-white" />
               </div>
               <div className={`flex flex-col `}>
-                <h5 className={`text-lg font-bold md:text-2xl`}>
+                <h5 className={`text-lg font-bold md:text-xl`}>
                   Environmental Remediation
                 </h5>
                 <p
                   className={`font-normal text-sm text-gray-400  md:text-[16px]`}
                 >
                   Safe cleanup of hazardous materials protecting people and
-                  propertyComplete Environmental Solutions
+                  property. Complete Environmental Solutions.
                 </p>
               </div>
             </div>
@@ -60,17 +64,17 @@ const Services = () => {
               <div
                 className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
-                <Shredder className="h-10 w-10  text-white" />
+                <Tractor className="h-10 w-10  text-white" />
               </div>
               <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-bold text-lg  md:text-2xl`}>
+                <h5 className={`font-bold text-lg  md:text-xl`}>
                   Selective Demolition
                 </h5>
                 <p
                   className={`font-normal text-sm text-gray-400  md:text-[16px]`}
                 >
                   Precision demolition services for occupied and sensitive
-                  structures
+                  structures.Roll-off containers and hazmat transport solutions
                 </p>
               </div>
             </div>
@@ -88,14 +92,14 @@ const Services = () => {
               </div>
 
               <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-bold text-lg  md:text-2xl`}>
+                <h5 className={`font-bold text-lg  md:text-xl`}>
                   Transportation Services
                 </h5>
                 <p
                   className={`font-normal text-sm text-gray-400  md:text-[16px]`}
                 >
                   Specialized hauling and emergency response for hazardous
-                  materials
+                  materials. Roll-off containers and hazmat transport solutions.
                 </p>
               </div>
             </div>
@@ -107,13 +111,14 @@ const Services = () => {
                 <Recycle className="h-10 w-10  text-white" />
               </div>
               <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-bold text-lg  md:text-2xl`}>
+                <h5 className={`font-bold text-lg  md:text-xl`}>
                   Debris Removal & Recycling
                 </h5>
                 <p
                   className={`font-normal text-sm text-gray-400  md:text-[16px]`}
                 >
-                  Professional demolition services for all structures
+                  Sustainable waste management and material recovery solutions.
+                  Eco-friendly debris removal with maximum material recover
                 </p>
               </div>
             </div>

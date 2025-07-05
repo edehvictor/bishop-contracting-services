@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
                             Selective demolition
                           </a>
                           <a
-                            href="#transport"
+                            href="/transportation"
                             className="flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors"
                           >
                             <Truck className="h-4 w-4 mr-3 text-blue-500" />

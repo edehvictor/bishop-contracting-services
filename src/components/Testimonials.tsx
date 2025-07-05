@@ -55,7 +55,7 @@ const Testimonials: React.FC = () => {
     {
       title: "Superb!",
       content:
-        "Professional and efficient—removed asbestos tiles without disrupting our family routine.",
+        "Efficient—removed asbestos tiles without disrupting our family routine.",
       author: "Sarah M",
       role: "Homeowner",
       avatarUrl: "/images/testimonial-1.jpg",

@@ -25,7 +25,7 @@ const DemolitionHero = () => {
               Executed. Minimally Invasive. Maximum Control
             </p>
           </div>
-          <div className="flex md:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
+          <div className="flex sm:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
             <Button
               asChild
               className="w-fit bg-[#00AC41]  px-6 py-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "

@@ -2,7 +2,7 @@ import { Mail, Phone, ExternalLink, FormInput } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white py-10" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10">
         <div className="text-center flex flex-col justify-center items-center mb-10">
           <p className="flex justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-500 mb-5 text-sm md:text-base">
