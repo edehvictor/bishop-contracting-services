@@ -1,100 +1,51 @@
+import Navbar from "@/components/Header";
+import { Button } from "@/components/ui/button";
+
 const TransportationHero = () => {
   return (
-    <section className="bg-black text-white py-28 px-6 md:px-16 bg-[url('/images/ceo-bg.jpg')] bg-cover bg-center relative">
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Specialized Transportation Services
-        </h1>
-        <p className="max-w-2xl text-lg text-gray-300">
-          From roll-off container rentals to hazardous material transport and
-          24/7 emergency response, we move safely, swiftly, and in full
-          compliance.
-        </p>
-      </div>
+    <section className="bg-[url('/images/circle-shape.svg')] h-scr een bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 border-b-1 border-green-200">
+      <Navbar />
+      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10">
+        <div className="flex md:flex-row flex-col w-full  h-full pt-36 pb-1 justify-start items-start gap-x-10 ">
+          <div className="mt-10 w-full">
+            <div className="mb-6 md:text-start text-center w-full">
+              <p className="flex justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-500 text-sm md:text-base">
+                <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+                Transportation stewards
+              </p>
+              <h1 className="text-2xl sm:text-4xl  font-bold text-gray-800 leading-16 mb-6">
+                Safe. Reliable. Always on Time.
+              </h1>
 
-      <section className="py-20 px-6 md:px-16 bg-white text-gray-800">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">
-              Safe, Certified, and Ready
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              We provide reliable transportation solutions tailored for
-              environmental and industrial operations. Our fleet is equipped for
-              hazardous waste hauling, debris roll-offs, and critical emergency
-              deployments — all handled by certified professionals.
-            </p>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-sm">
-              <li>DOT & EPA-compliant hazmat transport</li>
-              <li>Roll-off containers from 10 to 40 yards</li>
-              <li>Rapid deployment for spills and urgent events</li>
-              <li>Tracked logistics and insured delivery</li>
-            </ul>
-          </div>
-          <img
-            src="/images/transport-overview.jpg"
-            alt="Hazmat truck"
-            className="rounded-xl shadow-md"
-          />
-        </div>
-      </section>
-      <section className="bg-gray-50 py-16 px-6 md:px-16">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl font-bold text-gray-900 mb-10 text-center">
-            What We Offer
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Roll-off Container Rentals",
-                description:
-                  "Available in multiple sizes, perfect for demolition, cleanups, and site waste. Fast delivery and pickup.",
-                icon: "🗑️",
-              },
-              {
-                title: "Hazardous Material Transport",
-                description:
-                  "Certified for transporting asbestos, chemicals, and other regulated materials, fully documented and compliant.",
-                icon: "☣️",
-              },
-              {
-                title: "24/7 Emergency Response",
-                description:
-                  "Rapid dispatch for environmental emergencies, spills, or regulated substance incidents — day or night.",
-                icon: "🚨",
-              },
-            ].map((service, idx) => (
-              <div
-                key={idx}
-                className="bg-white border rounded-lg p-6 shadow hover:shadow-lg transition-all"
+              <p className="text-[16px] text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                Whether it’s hauling equipment, managing hazardous materials, or
+                providing custom tours, our certified drivers and
+                well-maintained fleet get you there — safely and efficiently.
+              </p>
+            </div>
+            <div className="flex sm:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
+              <Button
+                asChild
+                className="w-fit bg-[#00AC41]  px-6 py-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
               >
-                <div className="text-3xl mb-4">{service.icon}</div>
-                <h4 className="font-semibold text-lg mb-2">{service.title}</h4>
-                <p className="text-sm text-gray-600">{service.description}</p>
+                <a href="#quote">Get Free Assessment</a>
+              </Button>
+              <div className="w-[180px] text-center  px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
+                <a href="#quote">See our fleet</a>
               </div>
-            ))}
+            </div>
+          </div>
+          <div className="w-full flex justify-center md:justify-end mt-10 relative mb-10">
+            <div className="absolute inset-0 flex justify-center md:justify-end"></div>
+
+            <img
+              src="/images/transp.jpeg"
+              alt="Service"
+              className="relative z-10 w-full  md:w-[550px]  h-[17rem] md:h-[27rem] object-cover transform rounded-2xl "
+            />
           </div>
         </div>
-      </section>
-
-      <section className="py-16 px-6 md:px-16 bg-green-600 text-white text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">
-            Need Urgent Transportation Support?
-          </h2>
-          <p className="mb-6">
-            Our team is on standby 24/7 to respond to your project or emergency
-            needs.
-          </p>
-          <a
-            href="#quote"
-            className="inline-block bg-white text-green-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition"
-          >
-            Request a Quote
-          </a>
-        </div>
-      </section>
+      </div>
     </section>
   );
 };

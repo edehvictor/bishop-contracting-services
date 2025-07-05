@@ -46,7 +46,7 @@ const Feature: React.FC = () => {
           <p className="flex items-center justify-center gap-2 text-sm text-zinc-600 border border-green-300 w-fit mx-auto px-4 py-2 rounded-full bg-white">
             <Crown size={16} /> Industry Leader
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-4">
             All Your Environmental
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600 ml-2">
               Solutions in One Place

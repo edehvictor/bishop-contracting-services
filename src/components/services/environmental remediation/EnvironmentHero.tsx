@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const EnvironmentHero = () => {
   return (
-    <section className="relative bg-[url('/images/net.png')] mb-10 bg-center bg-cover object-contain bg-blend-multiply w-full ">
+    <section className="relative bg-[url('/images/net.png')] mb-10 bg-center bg-cover w-full ">
       <div className="relative z-10 py-36 pb-10 max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full">
         <Navbar />
         <div className="mt-10 w-full flex flex-col items-center justify-center">
