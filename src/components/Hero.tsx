@@ -1,5 +1,5 @@
 import Navbar from "./Header";
-import { Button } from "./ui/button";
+import CustomButton from "./ui/CustomButton";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
                 <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
                 Environmental stewards
               </p>
-              <h1 className="text-2xl sm:text-5xl  font-bold text-gray-800 leading-16 mb-6">
+              <h1 className="text-2xl sm:text-5xl  font-bold text-gray-800 md:leading-16 mb-6">
                 Environmental{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                   Leaders
@@ -28,17 +28,7 @@ const Hero = () => {
                 core.
               </p>
             </div>
-            <div className="flex sm:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
-              <Button
-                asChild
-                className="w-fit bg-[#00AC41]  px-6 py-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
-              >
-                <a href="#quote">Get Free Assessment</a>
-              </Button>
-              <div className="w-[180px] text-center  px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
-                <a href="#quote">Contact us</a>
-              </div>
-            </div>
+            <CustomButton text="Get free assessment" content="Contact us" />
           </div>
           <div className="w-full flex justify-center md:justify-end mt-10 relative mb-10">
             <div className="absolute inset-0 flex justify-center md:justify-end">

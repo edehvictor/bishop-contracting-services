@@ -1,5 +1,5 @@
 import Navbar from "@/components/Header";
-import { Button } from "@/components/ui/button";
+import CustomButton from "@/components/ui/CustomButton";
 
 const TransportationHero = () => {
   return (
@@ -23,17 +23,7 @@ const TransportationHero = () => {
                 well-maintained fleet get you there — safely and efficiently.
               </p>
             </div>
-            <div className="flex sm:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
-              <Button
-                asChild
-                className="w-fit bg-[#00AC41]  px-6 py-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
-              >
-                <a href="#quote">Get Free Assessment</a>
-              </Button>
-              <div className="w-[180px] text-center  px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
-                <a href="#quote">See our fleet</a>
-              </div>
-            </div>
+            <CustomButton content="Contact us" text="Get free assessement" />
           </div>
           <div className="w-full flex justify-center md:justify-end mt-10 relative mb-10">
             <div className="absolute inset-0 flex justify-center md:justify-end"></div>

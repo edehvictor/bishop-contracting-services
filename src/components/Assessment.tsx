@@ -1,9 +1,12 @@
-import { Mail, Phone, ExternalLink, FormInput } from "lucide-react";
+import { Mail, Phone, ExternalLink, MapPin } from "lucide-react";
 
-const ContactSection = () => {
+const Assessement = () => {
   return (
-    <section className="bg-white py-10" id="contact">
-      <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10">
+    <section className="bg-white py-10">
+      <div
+        className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10"
+        id="assessment-form"
+      >
         <div className="text-center flex flex-col justify-center items-center mb-10">
           <p className="flex justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-500 mb-5 text-sm md:text-base">
             <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
@@ -18,28 +21,58 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-10 w-full">
+        <div
+          className="flex flex-col md:flex-row gap-10 w-full"
+          id="assessment-form"
+        >
           <form className="bg-gray-50 rounded-2xl shadow p-6 md:p-8 space-y-5 w-full">
             <input
               type="text"
               placeholder="Enter your name"
               className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              required
+              id="contact"
             />
+
             <input
               type="email"
               placeholder="Enter your email"
               className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              required
             />
-            <textarea
-              placeholder="Enter your message"
-              rows={5}
+
+            <select
+              className="w-full px-4 py-3 rounded-md border border-gray-200 text-zinc-500 focus:outline-green-500"
+              required
+            >
+              <option disabled selected>
+                Select project type
+              </option>
+              <option>Environmental Remediation</option>
+              <option>Selective Demolition</option>
+              <option>Transportation / Hazmat</option>
+              <option>Other</option>
+            </select>
+
+            <input
+              type="text"
+              placeholder="Project address or general location"
               className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              required
+            />
+
+            <textarea
+              placeholder="Briefly describe your needs or project details"
+              rows={3}
+              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              required
             ></textarea>
+
             <button
               type="submit"
-              className="w-full bg-gradient-to-br  from-green-500 to-green-600  text-white py-3 rounded-md font-semibold cursor-pointer"
+              className="w-full bg-gradient-to-br from-green-500 to-green-600 text-white py-3 rounded-md font-semibold cursor-pointer hover:shadow-lg"
             >
-              Submit
+              Submit Request
             </button>
           </form>
 
@@ -48,17 +81,38 @@ const ContactSection = () => {
               {
                 icon: <Mail className="w-5 h-5" />,
                 title: "You can email us here",
-                action: "sales@BCS.com",
+                action: (
+                  <a
+                    href="mailto:sales@BCS.com"
+                    className="text-gray-500 hover:underline"
+                  >
+                    sales@BCS.com
+                  </a>
+                ),
               },
               {
                 icon: <Phone className="w-5 h-5" />,
                 title: "Make inquiry about your project",
-                action: "Quick inquiries",
+                action: (
+                  <a
+                    href="tel:+1234567890"
+                    className="text-gray-500 hover:underline"
+                  >
+                    +1 (234) 567-890
+                  </a>
+                ),
               },
               {
-                icon: <FormInput className="w-5 h-5" />,
-                title: "Get free asseement",
-                action: "Forms for assessment",
+                icon: <MapPin className="w-5 h-5" />,
+                title: "Need a specialist onsite?",
+                action: (
+                  <a
+                    href="tel:+1234567890"
+                    className="text-gray-500 hover:underline"
+                  >
+                    Request a site visit
+                  </a>
+                ),
               },
             ].map((item, index) => (
               <div
@@ -84,4 +138,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Assessement;

@@ -16,10 +16,9 @@ import {
 } from "lucide-react";
 
 export const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
   { name: "Services", href: "#", hasDropdown: true },
-  { name: "Contact", href: "#contact" },
+  { name: "Company", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export const serviceItems = [

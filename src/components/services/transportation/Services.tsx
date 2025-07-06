@@ -1,5 +1,3 @@
-import { MapPin, Circle, Calendar, Clock, ChevronDown } from "lucide-react";
-
 const Services = () => {
   return (
     <section className="bg-black text-white py-24 px-6 md:px-16">
@@ -23,11 +21,9 @@ const Services = () => {
                 type="text"
                 readOnly
                 disabled
-                value="Pickup location"
+                value="We pick up from any location"
                 className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 placeholder:text-gray-400 pointer-events-none"
               />
-              <Circle className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
-              <MapPin className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
             </div>
 
             <div className="relative">
@@ -35,10 +31,9 @@ const Services = () => {
                 type="text"
                 readOnly
                 disabled
-                value="Dropoff location"
+                value="We Dropoff at designated location"
                 className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 placeholder:text-gray-400 pointer-events-none"
               />
-              <Circle className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
             </div>
 
             <div className="flex gap-4">
@@ -47,21 +42,18 @@ const Services = () => {
                   type="text"
                   readOnly
                   disabled
-                  value="Today"
+                  value="Start today"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pointer-events-none"
                 />
-                <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
               </div>
               <div className="relative w-1/2">
                 <input
                   type="text"
                   readOnly
                   disabled
-                  value="Now"
+                  value="Schedule a day"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pr-8 pointer-events-none"
                 />
-                <Clock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
               </div>
             </div>
           </div>

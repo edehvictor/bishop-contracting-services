@@ -1,4 +1,4 @@
-import ContactSection from "@/components/Contact";
+import Assessement from "@/components/Assessment";
 import Footer from "@/components/Footer";
 import Features from "@/components/services/transportation/Features";
 import Services from "@/components/services/transportation/Services";
@@ -12,7 +12,7 @@ const Transportation = () => {
       <Services />
       <Features />
       <WhyChooseTransport />
-      <ContactSection />
+      <Assessement />
       <Footer />
     </div>
   );

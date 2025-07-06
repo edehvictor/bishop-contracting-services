@@ -4,6 +4,7 @@ import Environment from "./pages/Environment";
 import Demolition from "./pages/Demolition";
 import Company from "./pages/Company";
 import Transportation from "./pages/Transportation";
+import ContactPage from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/transportation",
     element: <Transportation />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
   },
 ]);
 

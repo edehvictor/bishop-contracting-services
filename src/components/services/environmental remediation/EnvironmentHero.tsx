@@ -1,5 +1,5 @@
 import Navbar from "@/components/Header";
-import { Button } from "@/components/ui/button";
+import CustomButton from "@/components/ui/CustomButton";
 
 const EnvironmentHero = () => {
   return (
@@ -26,17 +26,7 @@ const EnvironmentHero = () => {
               and in full regulatory compliance
             </p>
           </div>
-          <div className="flex sm:flex-row flex-col items-center justify-center md:justify-start md:items-start gap-6">
-            <Button
-              asChild
-              className="w-fit bg-[#00AC41]  px-6 py-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
-            >
-              <a href="#quote">Get Free Assessment</a>
-            </Button>
-            <div className="w-[180px] text-center  px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
-              <a href="#quote">Contact us</a>
-            </div>
-          </div>
+          <CustomButton content="Contact us" text="Get free assessement" />
         </div>
       </div>
     </section>

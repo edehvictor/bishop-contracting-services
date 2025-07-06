@@ -21,9 +21,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1">
             <div className="flex items-center mb-3">
-              <div className="flex items-centerS">
-                <img src="/images/logo.png" alt="logo " className="w-16" />
-              </div>
+              <a href="/" className="flex items-centerS">
+                <img
+                  src="/images/logo.png"
+                  alt="logo "
+                  className="w-16 cursor-pointer"
+                />
+              </a>
             </div>
             <p className="text-gray-500 mb-4">
               All Your Environmental Solutions in One Place
@@ -41,7 +45,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* More Links */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg f text-zinc-700">More</h3>
             <div className="flex flex-col space-y-2 text-gray-600 text-sm font-medium ">
@@ -51,14 +54,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Legal & Policy Links */}
           <div className="space-y-4">
             <h3 className="f text-gray-800  font-semibold ">
               Legal & Policy Links
             </h3>
             <div className="flex flex-col space-y-2 text-gray-600 font-medium text-sm ">
               <FooterLink href="/#">Privacy Policy</FooterLink>
-              <FooterLink href="/#">Cookie Policy</FooterLink>
+              <FooterLink href="/#">Cookies Policy</FooterLink>
               <FooterLink href="/#">Terms and condition</FooterLink>
             </div>
           </div>

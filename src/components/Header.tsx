@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
                   asChild
                   className="bg-[#00AC41] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
                 >
-                  <a href="#quote">Get Free Assessment</a>
+                  <a href="#assessment-form">Get Free Assessment</a>
                 </Button>
               </div>
 
