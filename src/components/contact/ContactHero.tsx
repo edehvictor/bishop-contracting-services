@@ -9,7 +9,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className=" py-40 px-6 md:px-12 bg-[url('/images/circle-shape.svg')]">
+    <section className=" py-40 px-6 md:px-12 bg-[url('/images/bg.svg')]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-start mb-16">
           Contact
