@@ -1,5 +1,5 @@
 import React from "react";
-import { Crown, type LucideIcon } from "lucide-react";
+import { type LucideIcon } from "lucide-react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { FeatureList } from "@/lib/list";
 
@@ -40,11 +40,12 @@ const Feature: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="Feature">
+    <section className="md:py-20 py-10 bg-white" id="Feature">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="text-center mb-16">
           <p className="flex items-center justify-center gap-2 text-sm text-zinc-600 border border-green-300 w-fit mx-auto px-4 py-2 rounded-full bg-white">
-            <Crown size={16} /> Industry Leader
+            <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>{" "}
+            Why Choose Us
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-4">
             All Your Environmental

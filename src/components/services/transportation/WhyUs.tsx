@@ -41,10 +41,6 @@ const WhyChooseTransport = () => {
               Your Trusted Transport Partner
             </h2>
           </div>
-          <p className="mt-6 md:mt-0 text-gray-300 max-w-xl md:text-right">
-            We’re committed to providing safe, comfortable, and reliable
-            transportation — every ride, every time.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 border-t border-white/10 pt-8">

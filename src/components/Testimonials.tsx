@@ -20,7 +20,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
   role,
   avatarUrl,
 }) => (
-  <section id="testimonial" className="bg-white p-8 rounded-xl space-y-6">
+  <section className="bg-white p-8 rounded-xl space-y-6">
     <div className="space-y-4">
       <h3 className="text-2xl font-semibold text-blue-500 font-grotesk">
         {title}
@@ -97,7 +97,7 @@ const Testimonial: React.FC = () => {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-12">
+    <div className="w-full max-w-7xl mx-auto px-4 py-12" id="testimonial">
       <div className="text-center flex flex-col justify-center items-center mb-10">
         <p className="flex justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-500 mb-5 text-sm md:text-base">
           <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>

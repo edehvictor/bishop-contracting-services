@@ -39,7 +39,7 @@ const Footer = () => {
               Quick Links
             </h3>
             <div className="flex flex-col text-gray-600 font-medium text-sm space-y-2 ">
-              <FooterLink href="/#">About us</FooterLink>
+              <FooterLink href="/about">About us</FooterLink>
               <FooterLink href="/#services">Services</FooterLink>
               <FooterLink href="/about">Company</FooterLink>
             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="flex flex-col space-y-2 text-gray-600 text-sm font-medium ">
               <FooterLink href="/#">Resources</FooterLink>
               <FooterLink href="/#">Certifications</FooterLink>
-              <FooterLink href="/#">Testimonials</FooterLink>
+              <FooterLink href="/#testimonial">Testimonials</FooterLink>
             </div>
           </div>
 

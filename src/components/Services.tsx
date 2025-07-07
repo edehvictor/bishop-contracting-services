@@ -1,119 +1,73 @@
 import { Leaf, Recycle, Tractor, Truck } from "lucide-react";
 
+const services = [
+  {
+    title: "Environmental Remediation",
+    icon: <Leaf className="h-10 w-10 text-green-600" />,
+    description:
+      "Safe cleanup of hazardous materials to protect people, property, and the environment.",
+  },
+  {
+    title: "Selective Demolition",
+    icon: <Tractor className="h-10 w-10 text-green-600" />,
+    description:
+      "Precision demolition for occupied or sensitive structures using controlled techniques.",
+  },
+  {
+    title: "Transportation Services",
+    icon: <Truck className="h-10 w-10 text-green-600" />,
+    description:
+      "Specialized hauling and emergency response for hazardous and non-hazardous materials.",
+  },
+  {
+    title: "Debris Removal & Recycling",
+    icon: <Recycle className="h-10 w-10 text-green-600" />,
+    description:
+      "Eco-friendly waste removal with a focus on recycling and sustainability.",
+  },
+];
+
 const Services = () => {
   return (
-    <section className={`bg-[#000] text-white`} id="services">
-      <div className={` max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7`}>
-        <div className={` w-full flex flex-col md:flex-row justify-between`}>
-          <div className="w-full ">
-            <h3
-              className={`uppercase  flex items-center gap-3 font-bold text-3xl`}
-            >
-              <img
-                height={25}
-                width={29}
-                src={`/images/pointerWhite.webp`}
-                alt="pointer"
-              />
-              Services
-            </h3>
+    <section className=" text-black md:py-20 py-10 px-5" id="services">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="text-start flex flex-col items-start justify-start mb-16">
+          <p className="flex items-center justify-start gap-2 text-sm text-zinc-600 border border-green-300 w-fit px-4 py-2 rounded-full bg-white">
+            <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>{" "}
+            Services
+          </p>
 
-            <img
-              src={`/images/underStrokeWhite.svg`}
-              alt="underline stroke"
-              width={20}
-              height={30}
-              className={`w-full max-w-[460px]`}
-            />
-          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-4">
+            Our Extensive Services
+          </h2>
+
+          <p className="text-gray-600 text-left text-base mt-4 max-w-3xl">
+            Our team is here to support your environmental remediation,
+            demolition, or logistics needs — from assessments to execution.
+            Reach out for fast, compliant, and professional assistance.
+          </p>
         </div>
 
-        <div
-          className={` flex py-5 lg:py-0 lg:h-[400px] w-full flex-col gap-15 lg:gap-0 lg:flex-row`}
-        >
-          <div className={`w-full flex flex-col gap-15`}>
-            <div className={`flex gap-2`}>
-              <div
-                className={`w-16 h-16 bg-gradient-to-br  rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-              >
-                <Leaf className="h-10 w-10  text-white" />
+        {/* Card Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md border border-gray-200 p-6 flex gap-4"
+            >
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center shadow-inner">
+                  {service.icon}
+                </div>
               </div>
-              <div className={`flex flex-col `}>
-                <h5 className={`text-lg font-bold md:text-xl`}>
-                  Environmental Remediation
-                </h5>
-                <p
-                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
-                >
-                  Safe cleanup of hazardous materials protecting people and
-                  property. Complete Environmental Solutions.
+              <div>
+                <h4 className="text-lg font-semibold">{service.title}</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  {service.description}
                 </p>
               </div>
             </div>
-            <hr className={`text-white `} />
-            <div className={`flex gap-2`}>
-              <div
-                className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-              >
-                <Tractor className="h-10 w-10  text-white" />
-              </div>
-              <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-bold text-lg  md:text-xl`}>
-                  Selective Demolition
-                </h5>
-                <p
-                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
-                >
-                  Precision demolition services for occupied and sensitive
-                  structures.Roll-off containers and hazmat transport solutions
-                </p>
-              </div>
-            </div>
-          </div>
-          <hr className={`lg:hidden bg-white/10 text-white/10`} />
-          <div
-            className={`w-1 h-full hidden lg:flex bg-white/10 text-white/10 `}
-          ></div>
-          <div className={`w-full self-center flex flex-col gap-15`}>
-            <div className={`flex lg:ps-5 gap-2`}>
-              <div
-                className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-              >
-                <Truck className="h-10 w-10  text-white" />
-              </div>
-
-              <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-bold text-lg  md:text-xl`}>
-                  Transportation Services
-                </h5>
-                <p
-                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
-                >
-                  Specialized hauling and emergency response for hazardous
-                  materials. Roll-off containers and hazmat transport solutions.
-                </p>
-              </div>
-            </div>
-            <hr className={`text-white/10 bg-white/10`} />
-            <div className={`flex lg:ps-5 gap-2`}>
-              <div
-                className={`w-16 h-16 bg-gradient-to-br   rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-              >
-                <Recycle className="h-10 w-10  text-white" />
-              </div>
-              <div className={`flex flex-col gap-2`}>
-                <h5 className={`font-bold text-lg  md:text-xl`}>
-                  Debris Removal & Recycling
-                </h5>
-                <p
-                  className={`font-normal text-sm text-gray-400  md:text-[16px]`}
-                >
-                  Sustainable waste management and material recovery solutions.
-                  Eco-friendly debris removal with maximum material recover
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

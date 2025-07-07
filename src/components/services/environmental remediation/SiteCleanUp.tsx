@@ -5,10 +5,10 @@ const SiteCleanUp = () => {
     <div className="mt-10 bg-white">
       <div className=" flex md:flex-row flex-col gap-4 ">
         <div
-          className={`$ group w-full relative bg-white rounded-2xl border-3 p-8 border-green-100 shadow-4xl  duration-300 shadow-green-100 overflow-hidden flex flex-col gap-y-4 justify-center`}
+          className={`$ group w-full relative bg-white rounded-2xl border p-8 border-green-100 shadow-4xl  duration-300 shadow-green-100 overflow-hidden flex flex-col gap-y-4 justify-center`}
         >
           <div className="w-full">
-            <div className="rlative">
+            <div className="relative">
               <p className="flex md:justify-center md:items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-600 text-sm md:text-base">
                 <PaintbrushIcon />
                 Lead Paint Removal
@@ -48,7 +48,7 @@ const SiteCleanUp = () => {
         </div>
 
         <div
-          className={`$ group relative bg-white rounded-2xl  border-3 p-8 border-green-100 shadow-4xl  duration-300 shadow-green-100 overflow-hidden flex flex-col gap-y-4 justify-center`}
+          className={`$ group relative bg-white rounded-2xl  border p-8 border-green-100 shadow-4xl  duration-300 shadow-green-100 overflow-hidden flex flex-col gap-y-4 justify-center`}
         >
           <div>
             <div className="relative">

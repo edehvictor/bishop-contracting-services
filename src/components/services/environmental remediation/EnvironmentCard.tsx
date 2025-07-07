@@ -29,9 +29,9 @@ const EnvironmentCard = () => {
               <div className="relative p-6  md:h-52 md:w-60 w-full flex flex-col bg-gradient-to-br from-green-50 to-green-50 rounded-2xl">
                 <div className="flex items-start space-x-4 mb-6">
                   <div
-                    className={`w-12 h-12 bg-gradient-to-br from-green-50 to-green-50 rounded-full border border-green-300 flex items-center justify-center shadow-lg flex-shrink-0`}
+                    className={`w-12 h-12 bg-gradient-to-br from-green-50 to-green-50 rounded-full border border-green-400 flex items-center justify-center shadow-lg flex-shrink-0`}
                   >
-                    <House className="h-8 w-8 text-green-500" />
+                    <House className="h-8 w-8 text-gray-500" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-gray-900  group-hover:text-gray-800 transition-colors">
@@ -50,7 +50,7 @@ const EnvironmentCard = () => {
                   <div
                     className={`w-12 h-12 bg-gradient-to-br from-green-50 to-green-50 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 border border-green-300`}
                   >
-                    <Container className="h-8 w-8 text-green-500" />
+                    <Container className="h-8 w-8 text-gray-500" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-gray-900  group-hover:text-gray-800 transition-colors">

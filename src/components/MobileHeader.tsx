@@ -67,7 +67,7 @@ const MobileHeader = ({
               asChild
               className="w-fit bg-[#00AC41]  px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white "
             >
-              <a href="#assessment-form">Get Free Assessment</a>
+              <a href="#assessment-form">Get Assessment</a>
             </Button>
           </div>
 

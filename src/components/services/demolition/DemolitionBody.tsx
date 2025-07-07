@@ -11,25 +11,25 @@ const DemolitionBody = () => {
       key: "structural",
       title: "Structural Demolition",
       text: "From concrete slabs to steel frames, we execute precise takedowns of major load-bearing structures with engineered safety protocols.",
-      image: "/images/structural.jpg",
+      image: "/images/structural-demolition.webp",
     },
     {
       key: "interior",
       title: "Interior Demolition",
       text: "We carefully dismantle non-structural elements like walls, ceilings, and fixtures—making way for upgrades without damaging the building’s core.",
-      image: "/images/interior.jpeg",
+      image: "/images/interior-demolition.webp",
     },
     {
       key: "occupied",
       title: "Occupied Buildings",
       text: "Our team works safely within active facilities, minimizing disruption while removing targeted areas. Ideal for hospitals, schools, and businesses.",
-      image: "/images/occupied.jpeg",
+      image: "/images/occupied-building.webp",
     },
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-16">
-      <div className="max-w-7xl py-10 px-5 mx-auto flex-col flex gap-7">
+    <section className="bg-black text-white md:py-20 py-10 px-6 md:px-16">
+      <div className="max-w-7xl py-5 px-5 mx-auto flex-col flex gap-7">
         <div className="max-w-[460px] w-full">
           <h3 className="uppercase flex items-center gap-3 font-bold text-lg">
             Interior | Structural | Occupied Buildings
@@ -70,7 +70,7 @@ const DemolitionBody = () => {
               src={item.image}
               alt={item.title}
               className={clsx(
-                "absolute w-[350px] sm:w-[420px] h-[28rem] rounded-xl shadow-xl transition-all duration-700 ease-in-out transform",
+                "absolute -[350px] sm:w-[420px] h-full rounded-xl shadow-xl transition-all duration-700 ease-in-out transform",
                 activeSection === item.key
                   ? "opacity-100 scale-100 blur-0"
                   : "opacity-0 scale-95 blur-sm pointer-events-none"
