@@ -26,15 +26,6 @@ const Services = () => {
               className={`w-full max-w-[460px]`}
             />
           </div>
-          <div className="w-full">
-            <p
-              className={`font-normal text-[16px] max-w-[560px] w-full text-gray-400 mb-8 mt-5 md:text-right`}
-            >
-              From environmental remediation to safe demolition and specialized
-              transport, we provide comprehensive services that protect
-              communities and deliver results.
-            </p>
-          </div>
         </div>
 
         <div

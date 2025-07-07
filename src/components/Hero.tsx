@@ -3,7 +3,7 @@ import CustomButton from "./ui/CustomButton";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/images/bg.svg')] h-scr een bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 border-b-1 border-green-200">
+    <section className="bg-[url('/images/bg.svg')] bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 ">
       <Navbar />
       <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10">
         <div className="flex md:flex-row flex-col w-full  h-full pt-36 pb-1 justify-start items-start gap-x-10 ">
