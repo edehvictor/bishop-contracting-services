@@ -1,6 +1,57 @@
+import { useState } from "react";
 import { Mail, Phone, ExternalLink, MapPin } from "lucide-react";
+import supabase from "@/lib/supabaseClient";
+import toast from "react-hot-toast";
 
 const Assessement = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    projectType: "",
+    address: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const { error } = await supabase.from("assessments").insert([
+      {
+        name: form.name,
+        email: form.email,
+        project_type: form.projectType,
+        address: form.address,
+        message: form.message,
+      },
+    ]);
+
+    if (error) {
+      toast.error("Error submitting request");
+    } else {
+      toast.success("Request submitted successfully!");
+      setForm({
+        name: "",
+        email: "",
+        projectType: "",
+        address: "",
+        message: "",
+      });
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="bg-white py-10">
       <div
@@ -25,27 +76,38 @@ const Assessement = () => {
           className="flex flex-col md:flex-row gap-10 w-full"
           id="assessment-form"
         >
-          <form className="bg-gray-50 rounded-2xl shadow p-6 md:p-8 space-y-5 w-full">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-gray-50 rounded-2xl shadow p-6 md:p-8 space-y-5 w-full"
+          >
             <input
               type="text"
+              name="name"
               placeholder="Enter your name"
-              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              value={form.name}
+              onChange={handleChange}
               required
-              id="contact"
+              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
             />
 
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              value={form.email}
+              onChange={handleChange}
               required
+              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
             />
 
             <select
-              className="w-full px-4 py-3 rounded-md border border-gray-200 text-zinc-500 focus:outline-green-500"
+              name="projectType"
+              value={form.projectType}
+              onChange={handleChange}
               required
+              className="w-full px-4 py-3 rounded-md border border-gray-200 text-zinc-500 focus:outline-green-500"
             >
-              <option disabled selected>
+              <option disabled value="">
                 Select project type
               </option>
               <option>Environmental Remediation</option>
@@ -56,23 +118,30 @@ const Assessement = () => {
 
             <input
               type="text"
+              name="address"
               placeholder="Project address or general location"
-              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              value={form.address}
+              onChange={handleChange}
               required
+              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
             />
 
             <textarea
+              name="message"
               placeholder="Briefly describe your needs or project details"
               rows={3}
-              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
+              value={form.message}
+              onChange={handleChange}
               required
+              className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-green-500"
             ></textarea>
 
             <button
               type="submit"
+              disabled={loading}
               className="w-full bg-gradient-to-br from-green-500 to-green-600 text-white py-3 rounded-md font-semibold cursor-pointer hover:shadow-lg"
             >
-              Submit Request
+              {loading ? "Submitting..." : "Submit Request"}
             </button>
           </form>
 

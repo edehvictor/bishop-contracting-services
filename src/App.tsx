@@ -5,6 +5,7 @@ import Demolition from "./pages/Demolition";
 import Company from "./pages/Company";
 import Transportation from "./pages/Transportation";
 import ContactPage from "./pages/Contact";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} gutter={8} />
       <RouterProvider router={router} />
     </>
   );
