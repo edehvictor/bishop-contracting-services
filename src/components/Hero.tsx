@@ -5,15 +5,15 @@ const Hero = () => {
   return (
     <section className="bg-[url('/images/bg.svg')] md:h-screen bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 ">
       <Navbar />
-      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10 ">
-        <div className="flex md:flex-row flex-col-reverse w-full  h-full pt-36 pb-1 justify-start items-start gap-x-10 ">
-          <div className="mt-10 w-full">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10  flex items-center justify-center h-full">
+        <div className="flex md:flex-row flex-col-reverse w-full  h-full  pb-1 justify-center items-center gap-x-10 ">
+          <div className="mt-14 w-full">
             <div className="mb-6 md:text-start text-start w-full">
               <p className="md:flex hidden justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-black text-sm md:text-base">
                 <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
                 Environmental stewards
               </p>
-              <h1 className="text-2xl sm:text-4xl md:text-5xl  font-bold text-gray-800 md:leading-14 mb-3">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl  font-bold text-gray-800 sm:leading-12 md:leading-16 mb-3">
                 Environmental{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                   Leaders
@@ -36,7 +36,7 @@ const Hero = () => {
             <img
               src="/images/hero.webp"
               alt="Service"
-              className="relative z-10 w-full  md:w-[550px]  h-[17rem] md:h-[27rem] object-cover transform  rounded-2xl "
+              className="relative z-10 w-full top-15 mt-15  md:w-[550px]  h-[17rem] md:h-[27rem] object-cover transform  rounded-2xl "
             />
           </div>
         </div>

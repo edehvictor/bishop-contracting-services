@@ -3,10 +3,10 @@ import CustomButton from "../ui/CustomButton";
 
 const CompanyHero = () => {
   return (
-    <section className="bg-[url('/images/bg.svg')]  bg-center bg-[#f7f5f4] w-full  left-0 right-0 top-0 border-b-1 border-green-200">
+    <section className="bg-[url('/images/bg.svg')]  bg-center md:h-screen bg-[#f7f5f4] w-full  left-0 right-0 top-0 border-b-1 border-green-200">
       <Navbar />
-      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10">
-        <div className="flex md:flex-row flex-col-reverse w-full  h-full pt-36 pb-1 justify-start items-start gap-x-10 ">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10  flex items-center justify-center h-full">
+        <div className="flex md:flex-row flex-col-reverse w-full  h-full  pb-1 justify-center items-center gap-x-10 ">
           <div className="mt-10 w-full">
             <div className="mb-6 md:text-start text-center w-full">
               <p className="md:flex hidden justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-500 text-sm md:text-base">
@@ -33,7 +33,7 @@ const CompanyHero = () => {
             <img
               src="/images/ceo.jpg"
               alt="Service"
-              className="relative z-10 w-full  md:w-[550px]  h-[20rem] md:h-[27rem] object-cover transform rounded-2xl "
+              className="relative z-10 w-full  md:w-[550px] mt-12 top-15 h-[20rem] md:h-[27rem] object-cover transform rounded-2xl "
             />
           </div>
         </div>

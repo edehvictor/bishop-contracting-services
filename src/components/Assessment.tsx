@@ -112,7 +112,7 @@ const Assessement = () => {
               </option>
               <option>Environmental Remediation</option>
               <option>Selective Demolition</option>
-              <option>Transportation / Hazmat</option>
+              <option>Transportation </option>
               <option>Other</option>
             </select>
 
