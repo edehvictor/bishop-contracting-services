@@ -5,7 +5,7 @@ const SiteCleanUp = () => {
     <div className="mt-10 bg-white">
       <div className=" flex md:flex-row flex-col gap-4 ">
         <div
-          className={`$ group w-full relative bg-white rounded-2xl border p-8 border-green-100 shadow-4xl  duration-300 shadow-green-100 overflow-hidden flex flex-col gap-y-4 justify-center`}
+          className={`$ group w-full relative bg-white rounded-2xl border md:p-6 p-3 border-green-100 shadow-4xl  duration-300 shadow-green-100 overflow-hidden flex flex-col gap-y-4 justify-center`}
         >
           <div className="w-full">
             <div className="relative">

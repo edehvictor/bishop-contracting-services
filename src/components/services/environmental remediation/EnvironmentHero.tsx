@@ -1,5 +1,4 @@
 import Navbar from "@/components/Header";
-import CustomButton from "@/components/ui/CustomButton";
 
 const EnvironmentHero = () => {
   return (
@@ -26,7 +25,18 @@ const EnvironmentHero = () => {
               and in full regulatory compliance
             </p>
           </div>
-          <CustomButton content="Contact us" text="Get assessement" />
+          <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4 md:gap-6 w-full">
+            <div className="w-full md:w-fit bg-[#00AC41] px-5 py-3 rounded-[5px] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white text-center">
+              <a href="#assessment-form" className="block w-full">
+                Get assessment
+              </a>
+            </div>
+            <div className="w-full md:w-[180px] text-center px-5 py-3 rounded-[5px] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
+              <a href="/contact" className="block w-full">
+                content
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

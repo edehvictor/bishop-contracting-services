@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <section className="bg-black text-white py-24 px-6 md:px-16">
+    <section className="bg-black text-white md:py-24 py-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
@@ -51,7 +51,7 @@ const Services = () => {
                   type="text"
                   readOnly
                   disabled
-                  value="Schedule a day"
+                  value="Schedule"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pr-8 pointer-events-none"
                 />
               </div>
@@ -59,7 +59,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center text-center border border-white/10 rounded-xl p-10">
+        <div className="flex flex-col items-center justify-center text-center border border-white/10 rounded-xl md:p-10 p-5">
           <img
             src="/images/transport.jpeg"
             alt="Transport Service"

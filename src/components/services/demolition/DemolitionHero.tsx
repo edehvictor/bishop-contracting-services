@@ -1,9 +1,8 @@
 import Navbar from "@/components/Header";
-import CustomButton from "@/components/ui/CustomButton";
 
 const DemolitionHero = () => {
   return (
-    <section className="relative bg-[url('/images/spiral-shapes.svg')] mb-10  bg-center object-center bg-blend-multiply w-full ">
+    <section className="relative bg-[url('/images/spiral-shapes.svg')] mb-10  bg-center object-center w-full ">
       <div className="relative z-10 py-36 pb-10 max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full">
         <Navbar />
         <div className="mt-10 w-full flex flex-col md:items-center justify-start items-start md:justify-center">
@@ -25,7 +24,18 @@ const DemolitionHero = () => {
               Executed. Minimally Invasive. Maximum Control
             </p>
           </div>
-          <CustomButton content="Contact us" text="Get assessement" />
+          <div className="flex flex-col md:flex-row justify-center items-stretch gap-4 md:gap-6 w-full">
+            <div className="w-full md:w-fit bg-[#00AC41] px-5 py-3 rounded-[5px] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-white text-center">
+              <a href="#assessment-form" className="block w-full">
+                Get assessment
+              </a>
+            </div>
+            <div className="w-full sm:w-[180px] text-center px-5 py-3 rounded-[5px] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
+              <a href="/contact" className="block w-full">
+                content
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

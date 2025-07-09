@@ -36,7 +36,7 @@ const Hero = () => {
             <img
               src="/images/hero.webp"
               alt="Service"
-              className="relative z-10 w-full top-15 mt-15  md:w-[550px]  h-[17rem] md:h-[27rem] object-cover transform  rounded-2xl "
+              className="relative z-10 w-full mt-28 md:mt-24 md:w-[550px] h-[17rem] md:h-[28rem] object-cover transform  rounded-2xl "
             />
           </div>
         </div>

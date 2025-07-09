@@ -29,7 +29,7 @@ const principles = [
 
 const WhyChooseTransport = () => {
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-16">
+    <section className="bg-black text-white md:py-20 py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">

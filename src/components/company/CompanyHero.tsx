@@ -33,7 +33,7 @@ const CompanyHero = () => {
             <img
               src="/images/ceo.jpg"
               alt="Service"
-              className="relative z-10 w-full  md:w-[550px] mt-12 top-15 h-[20rem] md:h-[27rem] object-cover transform rounded-2xl "
+              className="relative z-10 w-full  md:w-[550px] mt-28 md:mt-24 h-[20rem] md:h-[28rem] object-cover transform rounded-2xl "
             />
           </div>
         </div>

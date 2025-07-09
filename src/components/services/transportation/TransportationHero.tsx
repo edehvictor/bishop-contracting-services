@@ -13,7 +13,7 @@ const TransportationHero = () => {
                 <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
                 Transportation stewards
               </p>
-              <h1 className="text-2xl sm:text-4xl  font-bold text-gray-800 leading-16 ">
+              <h1 className="text-2xl sm:text-4xl  md:text-5xl  font-bold text-gray-800 sm:leading-12 md:leading-16 mb-3 ">
                 Safe. Reliable. Always on Time.
               </h1>
 

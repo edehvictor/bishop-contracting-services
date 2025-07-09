@@ -3,7 +3,7 @@ import SiteCleanUp from "./SiteCleanUp";
 
 const EnvironmentCard = () => {
   return (
-    <div className="mb-10 bg-white p-6">
+    <div className="mb-10 bg-white md:p-6 p-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full">
         <div
           className={`$ group w-full relative bg-white rounded-2xl border p-4 md:p-8 border-green-100 shadow-4xl transition-all duration-300 shadow-green-100 overflow-hidden flex md:flex-row flex-col gap-y-4 max-w-7xl mx-auto`}
