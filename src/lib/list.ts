@@ -17,7 +17,7 @@ import {
 
 export const navItems = [
   { name: "Services", href: "#", hasDropdown: true },
-  { name: "Company", href: "/about" },
+  { name: "About us", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
