@@ -23,7 +23,11 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
           <div className="m px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <a href="/" className="flex items-center space-x-3">
-                <img src="/images/logo.png" alt="logo " className="w-14" />
+                <img
+                  src="/images/logo.png"
+                  alt="logo "
+                  className="md:w-18 w-16"
+                />
               </a>
 
               <div className="hidden lg:flex items-center space-x-8">
