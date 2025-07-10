@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="absolute inset-0 flex justify-center md:justify-end"></div>
 
             <img
-              src="/images/hero.webp"
+              src="/images/turck.jpg"
               alt="Service"
               className="relative z-10 w-full mt-28 md:mt-24 md:w-[550px] h-[17rem] md:h-[28rem] object-cover transform  rounded-2xl "
             />
