@@ -31,7 +31,7 @@ const Services = () => {
                 type="text"
                 readOnly
                 disabled
-                value="We Drop-off at designated location"
+                value="We work within Missouri"
                 className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 placeholder:text-gray-400 pointer-events-none"
               />
             </div>
@@ -42,7 +42,7 @@ const Services = () => {
                   type="text"
                   readOnly
                   disabled
-                  value="Start today"
+                  value="We work within Illinois"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pointer-events-none"
                 />
               </div>
