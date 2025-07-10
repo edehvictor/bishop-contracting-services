@@ -21,7 +21,7 @@ const Services = () => {
                 type="text"
                 readOnly
                 disabled
-                value="We pick up from any location"
+                value="We work within Missouri"
                 className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 placeholder:text-gray-400 pointer-events-none"
               />
             </div>
@@ -31,7 +31,7 @@ const Services = () => {
                 type="text"
                 readOnly
                 disabled
-                value="We work within Missouri"
+                value="We work within Illinois"
                 className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 placeholder:text-gray-400 pointer-events-none"
               />
             </div>
@@ -42,7 +42,7 @@ const Services = () => {
                   type="text"
                   readOnly
                   disabled
-                  value="We work within Illinois"
+                  value="Start Today"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pointer-events-none"
                 />
               </div>
@@ -51,7 +51,7 @@ const Services = () => {
                   type="text"
                   readOnly
                   disabled
-                  value="Start tomorrow"
+                  value="Start Anytime"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pr-8 pointer-events-none"
                 />
               </div>
