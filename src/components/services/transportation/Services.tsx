@@ -31,7 +31,7 @@ const Services = () => {
                 type="text"
                 readOnly
                 disabled
-                value="We Dropoff at designated location"
+                value="We Drop-off at designated location"
                 className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 placeholder:text-gray-400 pointer-events-none"
               />
             </div>
@@ -51,7 +51,7 @@ const Services = () => {
                   type="text"
                   readOnly
                   disabled
-                  value="Schedule"
+                  value="Start tomorrow"
                   className="w-full bg-zinc-900 text-white border border-white/10 rounded-lg p-3 pl-10 pr-8 pointer-events-none"
                 />
               </div>
