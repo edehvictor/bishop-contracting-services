@@ -7,9 +7,9 @@ const Hero = () => {
       <Navbar />
       <div className=" max-w-7xl mx-auto px-4 sm:px-10 lg:px-10 w-full pb-10  flex items-center justify-center h-full">
         <div className="flex md:flex-row flex-col-reverse w-full  h-full  pb-1 justify-center items-center gap-x-10 ">
-          <div className="mt-14 w-full">
+          <div className="md:mt-14 w-full">
             <div className="mb-6 md:text-start text-start w-full">
-              <p className="md:flex hidden justify-center items-center gap-3 w-fit mx-auto md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-black text-sm md:text-base">
+              <p className="flex justify-center items-center gap-3 w-fit md:mx-0 px-3 py-1 text-center border border-green-300 rounded-2xl bg-white text-zinc-500 text-sm md:text-base mb-2">
                 <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
                 Environmental stewards
               </p>
@@ -34,9 +34,9 @@ const Hero = () => {
             <div className="absolute inset-0 flex justify-center md:justify-end"></div>
 
             <img
-              src="/images/turck.jpg"
+              src="/images/turck.jpeg"
               alt="Service"
-              className="relative z-10 w-full mt-28 md:mt-24 md:w-[550px] h-[17rem] md:h-[28rem] object-cover transform  rounded-2xl "
+              className="relative grayscale-50 z-10 w-full mt-28 md:mt-24 md:w-[550px] h-[17rem] md:h-[28rem] object-cover transform  rounded-2xl "
             />
           </div>
         </div>

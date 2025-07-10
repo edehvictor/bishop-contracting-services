@@ -63,7 +63,7 @@ const Services = () => {
           <img
             src="/images/transport.jpeg"
             alt="Transport Service"
-            className="rounded-md mb-6 h-[20rem]"
+            className="rounded-md mb-6 w-full"
           />
           <h3 className="text-xl font-semibold mb-2">
             Always Ready, Always On Time

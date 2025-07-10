@@ -30,7 +30,7 @@ const DemolitionHero = () => {
                 Get assessment
               </a>
             </div>
-            <div className="w-full sm:w-[180px] text-center px-5 py-3 rounded-[5px] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline-2 outline-green-300">
+            <div className="w-full sm:w-[180px] text-center px-5 py-3 rounded-[5px] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 text-gray-800 outline outline-green-300">
               <a href="/contact" className="block w-full">
                 content
               </a>
