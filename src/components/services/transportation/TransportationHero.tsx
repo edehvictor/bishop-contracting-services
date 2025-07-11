@@ -29,7 +29,7 @@ const TransportationHero = () => {
             <div className="absolute inset-0 flex justify-center md:justify-end"></div>
 
             <img
-              src="/images/truck.jpg"
+              src="/images/service-hero-img.jpeg"
               alt="Service"
               className="relative grayscale-25 z-10 w-full mt-28 md:mt-24 md:w-[550px] h-[17rem] md:h-[28rem] object-cover transform  rounded-2xl"
             />
@@ -41,3 +41,5 @@ const TransportationHero = () => {
 };
 
 export default TransportationHero;
+
+// I promise this is the last thing. Can you swap the two truck pictures. Put the yellow on the front page. After that I’m completely satisfied and

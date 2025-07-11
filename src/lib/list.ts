@@ -19,6 +19,7 @@ export const navItems = [
   { name: "Services", href: "#", hasDropdown: true },
   { name: "About us", href: "/about" },
   { name: "Contact", href: "/contact" },
+  { name: "Careers", href: "/careers" },
 ];
 
 export const serviceItems = [

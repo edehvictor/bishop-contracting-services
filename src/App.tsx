@@ -6,6 +6,7 @@ import Company from "./pages/Company";
 import Transportation from "./pages/Transportation";
 import ContactPage from "./pages/Contact";
 import { Toaster } from "react-hot-toast";
+import JobPage from "./pages/JobPage";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/careers",
+    element: <JobPage />,
   },
 ]);
 
